@@ -1,0 +1,21 @@
+{
+  "name": "resume-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "api",
+    "webapp"
+  ],
+  "scripts": {
+    "dev" : "concurrently \"npm -w api run dev\" \"npm -w webapp start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
